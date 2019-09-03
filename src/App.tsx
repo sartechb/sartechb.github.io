@@ -1,93 +1,89 @@
-import React from 'react';
-import clsx from 'clsx';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { createStyles, makeStyles, useTheme, Theme } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import Person from '@material-ui/icons/Person'
+import AppBar from "@material-ui/core/AppBar";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Divider from "@material-ui/core/Divider";
+import Drawer from "@material-ui/core/Drawer";
+import IconButton from "@material-ui/core/IconButton";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import { createStyles, makeStyles, Theme, useTheme } from "@material-ui/core/styles";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import MenuIcon from "@material-ui/icons/Menu";
+import Person from "@material-ui/icons/Person";
+import clsx from "clsx";
+import React from "react";
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
-
-import './App.css';
-import About from './pages/About';
+import "./App.css";
+import About from "./pages/About";
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      display: 'flex',
-    },
     appBar: {
-      zIndex: theme.zIndex.drawer + 1,
-      transition: theme.transitions.create(['width', 'margin'], {
-        easing: theme.transitions.easing.sharp,
+      transition: theme.transitions.create(["width", "margin"], {
         duration: theme.transitions.duration.leavingScreen,
+        easing: theme.transitions.easing.sharp,
       }),
+      zIndex: theme.zIndex.drawer + 1,
     },
     appBarShift: {
       marginLeft: drawerWidth,
+      transition: theme.transitions.create(["width", "margin"], {
+        duration: theme.transitions.duration.enteringScreen,
+        easing: theme.transitions.easing.sharp,
+      }),
       width: `calc(100% - ${drawerWidth}px)`,
-      transition: theme.transitions.create(['width', 'margin'], {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.enteringScreen,
-      }),
-    },
-    menuButton: {
-      marginRight: 36,
-    },
-    hide: {
-      display: 'none',
-    },
-    drawer: {
-      width: drawerWidth,
-      flexShrink: 0,
-      whiteSpace: 'nowrap',
-    },
-    drawerOpen: {
-      width: drawerWidth,
-      transition: theme.transitions.create('width', {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.enteringScreen,
-      }),
-    },
-    drawerClose: {
-      transition: theme.transitions.create('width', {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.leavingScreen,
-      }),
-      overflowX: 'hidden',
-      width: theme.spacing(7) + 1,
-      [theme.breakpoints.up('sm')]: {
-        width: theme.spacing(9) + 1,
-      },
-    },
-    toolbar: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'flex-end',
-      padding: theme.spacing(0, 1),
-      ...theme.mixins.toolbar,
     },
     content: {
       flexGrow: 1,
       padding: theme.spacing(3),
     },
+    drawer: {
+      flexShrink: 0,
+      whiteSpace: "nowrap",
+      width: drawerWidth,
+    },
+    drawerClose: {
+      overflowX: "hidden",
+      transition: theme.transitions.create("width", {
+        duration: theme.transitions.duration.leavingScreen,
+        easing: theme.transitions.easing.sharp,
+      }),
+      width: theme.spacing(7) + 1,
+      [theme.breakpoints.up("sm")]: {
+        width: theme.spacing(9) + 1,
+      },
+    },
+    drawerOpen: {
+      transition: theme.transitions.create("width", {
+        duration: theme.transitions.duration.enteringScreen,
+        easing: theme.transitions.easing.sharp,
+      }),
+      width: drawerWidth,
+    },
+    hide: {
+      display: "none",
+    },
+    menuButton: {
+      marginRight: 36,
+    },
+    root: {
+      display: "flex",
+    },
+    toolbar: {
+      alignItems: "center",
+      display: "flex",
+      justifyContent: "flex-end",
+      padding: theme.spacing(0, 1),
+      ...theme.mixins.toolbar,
+    },
   }),
 );
-
 
 const MainAppBar: React.FC = () => {
   const classes = useStyles();
@@ -96,11 +92,11 @@ const MainAppBar: React.FC = () => {
 
   const handleDrawerOpen = () => {
     setOpen(true);
-  }
+  };
 
   const handleDrawerClose = () => {
     setOpen(false);
-  }
+  };
 
   return (
     <React.Fragment>
@@ -144,14 +140,14 @@ const MainAppBar: React.FC = () => {
       >
         <div className={classes.toolbar}>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+            {theme.direction === "rtl" ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </div>
         <Divider />
         <List>
-          <ListItem button key='about'>
-            <Link to='/about'><ListItemIcon><Person/></ListItemIcon></Link>
-            <ListItemText primary='About' />
+          <ListItem button key="about">
+            <Link to="/about"><ListItemIcon><Person/></ListItemIcon></Link>
+            <ListItemText primary="About" />
           </ListItem>
           {/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem button key={text}>
@@ -162,29 +158,24 @@ const MainAppBar: React.FC = () => {
         </List>
       </Drawer>
       </React.Fragment>
-  )
-}
+  );
+};
 
 const App: React.FC = () => {
   const classes = useStyles();
   return (
     <Router>
       <div className="App">
-    <div className={classes.root}>
-
-        <MainAppBar />
-    <main className={classes.content}>
-      <div className={classes.toolbar} />
-      <Route path='/about' component={About} />
-
-    </main>
-      </div>
+        <div className={classes.root}>
+          <MainAppBar />
+          <main className={classes.content}>
+            <div className={classes.toolbar} />
+            <Route path="/about" component={About} />
+          </main>
+        </div>
       </div>
     </Router>
   );
-}
-
-
-
+};
 
 export default App;

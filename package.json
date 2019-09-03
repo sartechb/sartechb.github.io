@@ -21,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "tslint -p tsconfig.json",
+    "lint:fix": "tslint --fix -p tsconfig.json"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,7 +43,8 @@
   "devDependencies": {
     "husky": "^3.0.4",
     "lint-staged": "^9.2.5",
-    "prettier": "1.18.2"
+    "prettier": "1.18.2",
+    "tslint": "^5.19.0"
   },
   "husky": {
     "hooks": {
