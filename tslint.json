@@ -2,7 +2,9 @@
   "defaultSeverity": "error",
   "extends": ["tslint:recommended"],
   "jsRules": {},
-  "rules": {},
+  "rules": {
+    "interface-name": [true, "never-prefix"]
+  },
   "rulesDirectory": [],
   "linterOptions": {
     "exclude": ["src/serviceWorker.ts"]
