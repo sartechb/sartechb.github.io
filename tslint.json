@@ -1,12 +1,13 @@
 {
-  "defaultSeverity": "error",
-  "extends": ["tslint:recommended"],
-  "jsRules": {},
-  "rules": {
-    "interface-name": [true, "never-prefix"]
-  },
-  "rulesDirectory": [],
-  "linterOptions": {
-    "exclude": ["src/serviceWorker.ts"]
-  }
+    "defaultSeverity": "error",
+    "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+    "jsRules": {},
+    "rules": {
+        "interface-name": [true, "never-prefix"],
+        "jsx-boolean-value": ["never"]
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": ["src/serviceWorker.ts"]
+    }
 }
