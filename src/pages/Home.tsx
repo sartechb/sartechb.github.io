@@ -14,7 +14,6 @@ const styles = createStyles({
 
 const descriptions = [
     'a web developer',
-    'a software engineer @ American Express',
     'a New Yorker',
     'a fan of the 80s',
     'a PC gamer',
@@ -78,6 +77,7 @@ class Home extends React.Component<HomeProps, HomeState> {
                             {descriptions[descriptionIndex]}.
                         </Typography>
                     </Grid>
+                    <br />
                     <Grid item>
                         <Button variant="contained" color="primary">
                             Download Resume
