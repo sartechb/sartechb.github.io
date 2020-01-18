@@ -75,7 +75,7 @@ export const Skills: React.FC = () => {
                                         Proficient
                                     </Typography>
                                     <Typography align="left">
-                                        {skill.proficient.toString()}
+                                        {skill.proficient.join(', ')}
                                     </Typography>
                                     <Typography
                                         color="textSecondary"
@@ -84,7 +84,7 @@ export const Skills: React.FC = () => {
                                         Knowledgeable
                                     </Typography>
                                     <Typography align="left">
-                                        {skill.knowledgeable.toString()}
+                                        {skill.knowledgeable.join(', ')}
                                     </Typography>
                                     <Typography
                                         color="textSecondary"
@@ -93,7 +93,7 @@ export const Skills: React.FC = () => {
                                         Experience With
                                     </Typography>
                                     <Typography align="left">
-                                        {skill.experienceWith.toString()}
+                                        {skill.experienceWith.join(', ')}
                                     </Typography>
                                 </CardContent>
                             </Card>
