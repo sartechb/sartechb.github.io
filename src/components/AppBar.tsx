@@ -17,14 +17,25 @@ import {
     Theme,
     useTheme,
 } from '@material-ui/core/styles';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import HomeIcon from '@material-ui/icons/Home';
-import MenuIcon from '@material-ui/icons/Menu';
-import PersonIcon from '@material-ui/icons/Person';
+import { SvgIconProps } from '@material-ui/core/SvgIcon';
+import {
+    ChevronLeft,
+    ChevronRight,
+    Code,
+    Home,
+    Menu,
+    Person,
+} from '@material-ui/icons';
 import clsx from 'clsx';
-import React from 'react';
+import React, { ComponentType } from 'react';
 import { Link } from 'react-router-dom';
+
+interface MenuItem {
+    Icon: ComponentType<SvgIconProps>;
+    displayText: string;
+    key: string;
+    link: string;
+}
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme: Theme) =>
@@ -83,6 +94,27 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
+const menuItems: MenuItem[] = [
+    {
+        Icon: Home,
+        displayText: 'Home',
+        key: 'home',
+        link: '/',
+    },
+    {
+        Icon: Person,
+        displayText: 'About',
+        key: 'about',
+        link: '/about',
+    },
+    {
+        Icon: Code,
+        displayText: 'Skills',
+        key: 'skills',
+        link: '/skills',
+    },
+];
+
 const MainAppBar: React.FC = () => {
     const classes = useStyles();
     const theme = useTheme();
@@ -115,7 +147,7 @@ const MainAppBar: React.FC = () => {
                             [classes.hide]: open,
                         })}
                     >
-                        <MenuIcon />
+                        <Menu />
                     </IconButton>
                     <Typography variant="h6" noWrap>
                         Sarthak Bhandari
@@ -139,26 +171,27 @@ const MainAppBar: React.FC = () => {
                 <div className={classes.toolbar}>
                     <IconButton onClick={handleDrawerClose}>
                         {theme.direction === 'rtl' ? (
-                            <ChevronRightIcon />
+                            <ChevronRight />
                         ) : (
-                            <ChevronLeftIcon />
+                            <ChevronLeft />
                         )}
                     </IconButton>
                 </div>
                 <Divider />
                 <List>
-                    <ListItem button key="home" component={Link} to="/">
-                        <ListItemIcon>
-                            <HomeIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Home" />
-                    </ListItem>
-                    <ListItem button key="about" component={Link} to="/about">
-                        <ListItemIcon>
-                            <PersonIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="About" />
-                    </ListItem>
+                    {menuItems.map(menuItem => (
+                        <ListItem
+                            button
+                            key={menuItem.key}
+                            component={Link}
+                            to={menuItem.link}
+                        >
+                            <ListItemIcon>
+                                <menuItem.Icon />
+                            </ListItemIcon>
+                            <ListItemText primary={menuItem.displayText} />
+                        </ListItem>
+                    ))}
                 </List>
             </Drawer>
         </React.Fragment>
