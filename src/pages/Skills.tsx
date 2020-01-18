@@ -13,35 +13,35 @@ const useStyles = makeStyles((theme: Theme) =>
 
 interface Skill {
     area: string;
-    proficient: string[];
-    knowledgeable: string[];
     experienceWith: string[];
+    knowledgeable: string[];
+    proficient: string[];
 }
 
 const skillList: Skill[] = [
     {
         area: 'Front-End',
-        proficient: ['React', 'JavaScript/ES6', 'HTML'],
-        knowledgeable: ['TypeScript', 'Express', 'CSS', 'AngularJS', 'Redux'],
         experienceWith: ['Sass', 'Babel', 'Webpack'],
+        knowledgeable: ['TypeScript', 'Express', 'CSS', 'AngularJS', 'Redux'],
+        proficient: ['React', 'JavaScript/ES6', 'HTML'],
     },
     {
         area: 'Back-End',
-        proficient: ['Node'],
-        knowledgeable: ['SQL'],
         experienceWith: ['Java', 'Python (Flask, SciKit, NumPy)'],
+        knowledgeable: ['SQL'],
+        proficient: ['Node'],
     },
     {
         area: 'Testing & CI/CD',
-        proficient: ['Jenkins', 'Jest', 'Enzyme'],
-        knowledgeable: ['TravisCI', 'Wiremock'],
         experienceWith: ['Karma', 'Mocha', 'Cypress'],
+        knowledgeable: ['TravisCI', 'Wiremock'],
+        proficient: ['Jenkins', 'Jest', 'Enzyme'],
     },
     {
         area: 'Miscellaneous',
-        proficient: ['English', 'MacOS'],
-        knowledgeable: ['Windows', 'Linux', 'Microsoft Suite'],
         experienceWith: ['Spanish', 'Hindi', 'Adobe Photoshop'],
+        knowledgeable: ['Windows', 'Linux', 'Microsoft Suite'],
+        proficient: ['English', 'MacOS'],
     },
 ];
 
