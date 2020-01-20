@@ -22,23 +22,23 @@ const skillList: Skill[] = [
     {
         area: 'Front-End',
         experienceWith: ['Sass', 'Babel', 'Webpack'],
-        knowledgeable: ['TypeScript', 'Express', 'CSS', 'AngularJS', 'Redux'],
+        knowledgeable: ['TypeScript', 'CSS', 'AngularJS', 'Redux'],
         proficient: ['React', 'JavaScript/ES6', 'HTML'],
     },
     {
         area: 'Back-End',
         experienceWith: ['Java', 'Python (Flask, SciKit, NumPy)'],
         knowledgeable: ['SQL'],
-        proficient: ['Node'],
+        proficient: ['Node/Express'],
     },
     {
         area: 'Testing & CI/CD',
         experienceWith: ['Karma', 'Mocha', 'Cypress'],
-        knowledgeable: ['TravisCI', 'Wiremock'],
+        knowledgeable: ['TravisCI', 'Wiremock', 'Webdriver', 'Selenium'],
         proficient: ['Jenkins', 'Jest', 'Enzyme'],
     },
     {
-        area: 'Miscellaneous',
+        area: 'Other',
         experienceWith: ['Spanish', 'Hindi', 'Adobe Photoshop'],
         knowledgeable: ['Windows', 'Linux', 'Microsoft Suite'],
         proficient: ['English', 'MacOS'],

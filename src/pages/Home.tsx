@@ -79,7 +79,15 @@ class Home extends React.Component<HomeProps, HomeState> {
                     </Grid>
                     <br />
                     <Grid item>
-                        <Button variant="contained" color="primary">
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            href={
+                                process.env.PUBLIC_URL +
+                                '/Bhandari_Sarthak_Resume_Web.pdf'
+                            }
+                            target="_blank"
+                        >
                             Download Resume
                         </Button>
                     </Grid>
