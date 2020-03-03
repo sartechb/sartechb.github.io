@@ -25,6 +25,9 @@ import {
     Home,
     Menu,
     Person,
+    Work,
+    School,
+    Assignment,
 } from '@material-ui/icons';
 import clsx from 'clsx';
 import React, { ComponentType } from 'react';
@@ -112,6 +115,24 @@ const menuItems: MenuItem[] = [
         displayText: 'Skills',
         key: 'skills',
         link: '/skills',
+    },
+    {
+        Icon: Work,
+        displayText: 'Experience',
+        key: 'experience',
+        link: '/experience',
+    },
+    {
+        Icon: School,
+        displayText: 'Education',
+        key: 'education',
+        link: '/education',
+    },
+    {
+        Icon: Assignment,
+        displayText: 'Projects',
+        key: 'projects',
+        link: '/projects',
     },
 ];
 

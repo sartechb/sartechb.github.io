@@ -15,7 +15,7 @@ import MainAppBar from './components/AppBar';
 import About from './pages/About';
 import Home from './pages/Home';
 import { Skills } from './pages/Skills';
-
+import { Work } from './pages/Work';
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         content: {
@@ -69,6 +69,7 @@ const App: React.FC = () => {
                                 <Route exact path="/" component={Home} />
                                 <Route path="/about" component={About} />
                                 <Route path="/skills" component={Skills} />
+                                <Route path="/experience" component={Work} />
                             </Switch>
                         </main>
                     </div>
