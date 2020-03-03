@@ -13,9 +13,11 @@ import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
 import MainAppBar from './components/AppBar';
 import About from './pages/About';
+import { Education } from './pages/Education';
 import Home from './pages/Home';
 import { Skills } from './pages/Skills';
 import { Work } from './pages/Work';
+
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         content: {
@@ -70,6 +72,10 @@ const App: React.FC = () => {
                                 <Route path="/about" component={About} />
                                 <Route path="/skills" component={Skills} />
                                 <Route path="/experience" component={Work} />
+                                <Route
+                                    path="/education"
+                                    component={Education}
+                                />
                             </Switch>
                         </main>
                     </div>
