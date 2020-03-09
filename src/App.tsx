@@ -15,6 +15,7 @@ import MainAppBar from './components/AppBar';
 import About from './pages/About';
 import { Education } from './pages/Education';
 import Home from './pages/Home';
+import { Projects } from './pages/Projects';
 import { Skills } from './pages/Skills';
 import { Work } from './pages/Work';
 
@@ -76,6 +77,7 @@ const App: React.FC = () => {
                                     path="/education"
                                     component={Education}
                                 />
+                                <Route path="/projects" component={Projects} />
                             </Switch>
                         </main>
                     </div>

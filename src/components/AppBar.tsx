@@ -19,15 +19,15 @@ import {
 } from '@material-ui/core/styles';
 import { SvgIconProps } from '@material-ui/core/SvgIcon';
 import {
+    Assignment,
     ChevronLeft,
     ChevronRight,
     Code,
     Home,
     Menu,
     Person,
-    Work,
     School,
-    Assignment,
+    Work,
 } from '@material-ui/icons';
 import clsx from 'clsx';
 import React, { ComponentType } from 'react';
