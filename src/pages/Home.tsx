@@ -17,7 +17,7 @@ const descriptions = [
     'a New Yorker',
     'a fan of the 80s',
     'a PC gamer',
-    'an amatuer photographer',
+    'an amateur photographer',
     'a cooking enthusiast',
 ];
 interface HomeProps extends WithStyles<typeof styles> {
