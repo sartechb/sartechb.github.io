@@ -37,7 +37,7 @@ const projects: Project[] = [
         links: [
             {
                 title: 'Source',
-                href: '#',
+                href: 'https://github.com/sartechb/sartechb.github.io',
             },
         ],
     },
@@ -48,7 +48,7 @@ const projects: Project[] = [
         links: [
             {
                 title: 'Source',
-                href: 'https://github.com/sartechb/sartechb.github.io',
+                href: 'https://github.com/sartechb/old-personal-site',
             },
         ],
     },
