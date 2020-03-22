@@ -88,7 +88,7 @@ export const Projects: React.FC = () => {
                 </Grid>
                 <Grid container spacing={2}>
                     {projects.map(project => (
-                        <Grid item xs={4} key={project.title}>
+                        <Grid item xs={12} lg={4} key={project.title}>
                             <Card>
                                 <CardContent>
                                     <Typography
