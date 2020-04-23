@@ -1,7 +1,7 @@
 import { Avatar, Button, Grid, Typography } from '@material-ui/core';
 import { createStyles, withStyles, WithStyles } from '@material-ui/styles';
-
 import React from 'react';
+import ReactGA from 'react-ga';
 
 const styles = createStyles({
     avatar: {
@@ -56,6 +56,8 @@ class Home extends React.Component<HomeProps, HomeState> {
     public render() {
         const { classes } = this.props;
         const { descriptionIndex } = this.state;
+        ReactGA.pageview(window.location.pathname + window.location.search);
+
         return (
             <React.Fragment>
                 <Grid

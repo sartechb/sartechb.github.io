@@ -1,7 +1,7 @@
 import { Card, CardContent, Grid, Typography } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
-
 import React from 'react';
+import ReactGA from 'react-ga';
 
 const useStyles = makeStyles(() =>
     createStyles({
@@ -46,6 +46,7 @@ const university: Work = {
 
 export const Education: React.FC = () => {
     const classes = useStyles();
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
         <React.Fragment>
             <Grid container>

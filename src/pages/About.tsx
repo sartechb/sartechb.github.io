@@ -9,8 +9,8 @@ import {
     Typography,
 } from '@material-ui/core';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-
 import React from 'react';
+import ReactGA from 'react-ga';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -42,6 +42,8 @@ const About: React.FC = () => {
                 "Currently I'm working as a web developer at American Express. In the past I've worked on Android mobile apps and dabbled in machine learning, databases and computer security. My passion lies in human/computer interaction and good design.",
         },
     ];
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
         <React.Fragment>
             <Grid container>

@@ -10,6 +10,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { ThemeProvider } from '@material-ui/styles';
+import ReactGA from 'react-ga';
 import './App.css';
 import MainAppBar from './components/AppBar';
 import About from './pages/About';
@@ -60,6 +61,8 @@ const App: React.FC = () => {
         },
     });
     const classes = useStyles();
+    ReactGA.initialize('UA-66108476-2');
+
     return (
         <ThemeProvider theme={mainTheme}>
             <Router>
