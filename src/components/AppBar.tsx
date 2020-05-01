@@ -32,6 +32,7 @@ import {
 import clsx from 'clsx';
 import React, { ComponentType } from 'react';
 import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 interface MenuItem {
     Icon: ComponentType<SvgIconProps>;
@@ -143,10 +144,18 @@ const MainAppBar: React.FC = () => {
 
     const handleDrawerOpen = () => {
         setOpen(true);
+        ReactGA.event({
+            category: 'Navigation',
+            action: 'Toggled drawer open',
+        });
     };
 
     const handleDrawerClose = () => {
         setOpen(false);
+        ReactGA.event({
+            category: 'Navigation',
+            action: 'Toggled drawer close',
+        });
     };
 
     return (
@@ -206,6 +215,12 @@ const MainAppBar: React.FC = () => {
                             key={menuItem.key}
                             component={Link}
                             to={menuItem.link}
+                            onClick={() =>
+                                ReactGA.event({
+                                    category: 'Navigation',
+                                    action: `clicked ${menuItem.displayText}`,
+                                })
+                            }
                         >
                             <ListItemIcon>
                                 <menuItem.Icon />

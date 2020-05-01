@@ -28,6 +28,13 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
+const handleClick = (title: string) => {
+    ReactGA.event({
+        category: 'About',
+        action: `Clicked ${title}`,
+    });
+};
+
 const About: React.FC = () => {
     const classes = useStyles();
     const sections = [
@@ -78,6 +85,8 @@ const About: React.FC = () => {
                                 href="https://github.com/sartechb"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                // tslint:disable-next-line: jsx-no-lambda
+                                onClick={() => handleClick('Github')}
                             >
                                 Github
                             </Button>
@@ -86,6 +95,8 @@ const About: React.FC = () => {
                                 href="https://twitter.com/sartechb"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                // tslint:disable-next-line: jsx-no-lambda
+                                onClick={() => handleClick('Twitter')}
                             >
                                 Twitter
                             </Button>
@@ -94,6 +105,8 @@ const About: React.FC = () => {
                                 href="https://www.linkedin.com/in/sarthakbhandari/"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                // tslint:disable-next-line: jsx-no-lambda
+                                onClick={() => handleClick('LinkedIn')}
                             >
                                 LinkedIn
                             </Button>
@@ -101,6 +114,7 @@ const About: React.FC = () => {
                                 size="small"
                                 href="mailto:hello@sarthakb.com"
                                 rel="noopener noreferrer"
+                                onClick={() => handleClick('Email')}
                             >
                                 Email
                             </Button>

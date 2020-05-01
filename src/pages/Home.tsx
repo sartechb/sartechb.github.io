@@ -53,6 +53,13 @@ class Home extends React.Component<HomeProps, HomeState> {
         clearInterval(this.descriptionInterval);
     }
 
+    public handleClick() {
+        ReactGA.event({
+            category: 'Home',
+            action: 'Downloaded resume',
+        });
+    }
+
     public render() {
         const { classes } = this.props;
         const { descriptionIndex } = this.state;
@@ -89,6 +96,7 @@ class Home extends React.Component<HomeProps, HomeState> {
                                 '/Bhandari_Sarthak_Resume_Web.pdf'
                             }
                             target="_blank"
+                            onClick={this.handleClick}
                         >
                             Download Resume
                         </Button>
