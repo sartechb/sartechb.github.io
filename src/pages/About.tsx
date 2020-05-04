@@ -114,6 +114,7 @@ const About: React.FC = () => {
                                 size="small"
                                 href="mailto:hello@sarthakb.com"
                                 rel="noopener noreferrer"
+                                // tslint:disable-next-line: jsx-no-lambda
                                 onClick={() => handleClick('Email')}
                             >
                                 Email

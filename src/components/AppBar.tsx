@@ -31,8 +31,8 @@ import {
 } from '@material-ui/icons';
 import clsx from 'clsx';
 import React, { ComponentType } from 'react';
-import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga';
+import { Link } from 'react-router-dom';
 
 interface MenuItem {
     Icon: ComponentType<SvgIconProps>;
@@ -215,6 +215,7 @@ const MainAppBar: React.FC = () => {
                             key={menuItem.key}
                             component={Link}
                             to={menuItem.link}
+                            // tslint:disable-next-line: jsx-no-lambda
                             onClick={() =>
                                 ReactGA.event({
                                     category: 'Navigation',
