@@ -82,7 +82,7 @@ class Home extends React.Component<HomeProps, HomeState> {
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant="h3" component="h1" gutterBottom>
-                            Hello, Sarthak here. I'm{' '}
+                            Hello, Sarthak here. I&apos;m{' '}
                             {descriptions[descriptionIndex]}.
                         </Typography>
                     </Grid>

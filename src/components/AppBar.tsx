@@ -215,7 +215,6 @@ const MainAppBar: React.FC = () => {
                             key={menuItem.key}
                             component={Link}
                             to={menuItem.link}
-                            // tslint:disable-next-line: jsx-no-lambda
                             onClick={() =>
                                 ReactGA.event({
                                     category: 'Navigation',

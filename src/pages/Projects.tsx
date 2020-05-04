@@ -111,7 +111,6 @@ export const Projects: React.FC = () => {
                                             color="secondary"
                                             href={link.href}
                                             key={link.href}
-                                            // tslint:disable-next-line: jsx-no-lambda
                                             onClick={() =>
                                                 ReactGA.event({
                                                     category: 'Projects',

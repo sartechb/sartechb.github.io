@@ -85,7 +85,6 @@ const About: React.FC = () => {
                                 href="https://github.com/sartechb"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                // tslint:disable-next-line: jsx-no-lambda
                                 onClick={() => handleClick('Github')}
                             >
                                 Github
@@ -95,7 +94,6 @@ const About: React.FC = () => {
                                 href="https://twitter.com/sartechb"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                // tslint:disable-next-line: jsx-no-lambda
                                 onClick={() => handleClick('Twitter')}
                             >
                                 Twitter
@@ -105,7 +103,6 @@ const About: React.FC = () => {
                                 href="https://www.linkedin.com/in/sarthakbhandari/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                // tslint:disable-next-line: jsx-no-lambda
                                 onClick={() => handleClick('LinkedIn')}
                             >
                                 LinkedIn
@@ -114,7 +111,6 @@ const About: React.FC = () => {
                                 size="small"
                                 href="mailto:hello@sarthakb.com"
                                 rel="noopener noreferrer"
-                                // tslint:disable-next-line: jsx-no-lambda
                                 onClick={() => handleClick('Email')}
                             >
                                 Email
