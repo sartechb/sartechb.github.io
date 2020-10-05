@@ -31,6 +31,20 @@ interface Work {
 
 const experiences: Work[] = [
     {
+        company: 'Haven Life',
+        title: 'Software Engineer',
+        location: {
+            city: 'New York',
+            state: 'New York',
+        },
+        duration: {
+            start: "July '20",
+            end: 'Present',
+        },
+        description:
+            'Developing high visibility insurance software in Angular and Node.',
+    },
+    {
         company: 'American Express',
         title: 'Software Engineer',
         location: {
@@ -39,10 +53,10 @@ const experiences: Work[] = [
         },
         duration: {
             start: "August '17",
-            end: 'Present',
+            end: "July '20",
         },
         description:
-            'Developing high volume, high impact production software in React and Node. Leading architecture discussions for new applications. Led automation efforts to provide end to end coverage over multiple applications. Migrated components from legacy Angular code to React.',
+            'Developed high volume, high impact production software in React and Node. Led architecture discussions for new applications. Led automation efforts to provide end to end coverage over multiple applications. Migrated components from legacy AngularJS code to React. Led the intern program for my team and several lunch and learns for the wider org.',
     },
     {
         company: 'American Express',
@@ -100,7 +114,7 @@ export const Work: React.FC = () => {
                     </Typography>
                 </Grid>
                 <Grid container spacing={2}>
-                    {experiences.map(experience => (
+                    {experiences.map((experience) => (
                         <Grid item xs={12} lg={6} key={experience.duration.end}>
                             <Card>
                                 <CardContent>
