@@ -46,7 +46,7 @@ const About: React.FC = () => {
         {
             key: 'work',
             value:
-                "Currently I'm working as a web developer at American Express. In the past I've worked on Android mobile apps and dabbled in machine learning, databases and computer security. My passion lies in human/computer interaction and good design.",
+                "Currently I'm working as a full stack developer at Haven Life. In the past I've worked on React applications, Android mobile apps and dabbled in machine learning, databases and computer security. My passion lies in human/computer interaction and good design.",
         },
     ];
     ReactGA.pageview(window.location.pathname + window.location.search);
