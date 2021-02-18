@@ -41,7 +41,7 @@ const About: React.FC = () => {
         {
             key: 'about',
             value:
-                "Hey! I'm Sarthak, a midwest boy in the big city. Currently I live in NYC, spending my days roaming around the city. I enjoy science fiction movies, electronic music, the rad themes of the 80s, and terrible jokes. I graduated from the University of Michigan in 2017 with a degree in Computer Science (Go Blue!).",
+                "Hey! I'm Sarthak, a midwest man in the big city. Currently I live in NYC, spending my days roaming around the city. I enjoy science fiction movies, electronic music, the rad themes of the 80s, and terrible jokes. I graduated from the University of Michigan in 2017 with a degree in Computer Science (Go Blue!).",
         },
         {
             key: 'work',
