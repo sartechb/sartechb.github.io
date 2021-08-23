@@ -41,7 +41,7 @@ const skillList: Skill[] = [
         area: 'Other',
         experienceWith: ['Spanish', 'Hindi', 'Adobe Photoshop'],
         knowledgeable: ['Windows', 'Linux', 'Microsoft Suite'],
-        proficient: ['English', 'MacOS'],
+        proficient: ['English', 'MacOS', 'Agile', 'Scrum'],
     },
 ];
 
@@ -57,7 +57,7 @@ export const Skills: React.FC = () => {
                     </Typography>
                 </Grid>
                 <Grid container spacing={2}>
-                    {skillList.map(skill => (
+                    {skillList.map((skill) => (
                         <Grid item xs={12} lg={3} key={skill.area}>
                             <Card>
                                 <CardContent>

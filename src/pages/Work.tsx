@@ -32,6 +32,20 @@ interface Work {
 const experiences: Work[] = [
     {
         company: 'Haven Life',
+        title: 'Product Manager',
+        location: {
+            city: 'New York',
+            state: 'New York',
+        },
+        duration: {
+            start: "July '21",
+            end: 'Present',
+        },
+        description:
+            'Analyzing data and planning product strategy and roadmaps for our life insurance products. Managing the product vision and collaborating with the engineers and designers to build solutions for our clients.',
+    },
+    {
+        company: 'Haven Life',
         title: 'Software Engineer',
         location: {
             city: 'New York',
@@ -39,10 +53,10 @@ const experiences: Work[] = [
         },
         duration: {
             start: "July '20",
-            end: 'Present',
+            end: "July '21",
         },
         description:
-            'Developing high visibility insurance software in Angular and Node.',
+            'Developed high visibility insurance software in Angular and Node.',
     },
     {
         company: 'American Express',

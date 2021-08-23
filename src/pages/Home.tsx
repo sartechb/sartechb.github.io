@@ -13,6 +13,7 @@ const styles = createStyles({
 });
 
 const descriptions = [
+    'a product manager',
     'a web developer',
     'a New Yorker',
     'a fan of the 80s',
@@ -42,7 +43,7 @@ class Home extends React.Component<HomeProps, HomeState> {
             if (this.state.counter === descriptions.length) {
                 this.setState({ counter: 0 });
             }
-            this.setState(prevState => ({
+            this.setState((prevState) => ({
                 counter: prevState.counter + 1,
                 descriptionIndex: prevState.counter % descriptions.length,
             }));
