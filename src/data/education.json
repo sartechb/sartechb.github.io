@@ -7,9 +7,22 @@
       "state": "Michigan"
     },
     "duration": {
-      "start": "September '13",
-      "end": "May '17"
+      "start": "2013-09",
+      "end": "2017-05"
     },
     "description": "Graduated Cum Laude. Took a variety of classes including machine learning, operating systems and distributed systems. Minored in entrepreneurship. I sometimes awkwardly say 'Go Blue!' to people wearing Michigan gear when I see them."
+  },
+  {
+    "school": "New York University",
+    "degree": "Master's in Business Administation",
+    "location": {
+      "city": "New York",
+      "state": "New York"
+    },
+    "duration": {
+      "start": "2022-08",
+      "end": "2025-08"
+    },
+    "description": "Specialized in strategy, finance, and global business. Graduated with Distinction and Beta Gamma Sigma honors, 3x Dean's list, and recepient for the Reuben and Jane Leibowitz Scholarship. Block leader for my cohort, organizing events and activities to foster community among students."
   }
 ]

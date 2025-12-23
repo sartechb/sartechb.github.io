@@ -1,5 +1,6 @@
 ---
 import { ThemeToggle } from './ThemeToggle';
+import { MobileNav } from './MobileNav';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -36,9 +37,9 @@ const currentPath = Astro.url.pathname;
       <ThemeToggle client:load />
     </div>
 
-    {/* Mobile Navigation - TODO: Implement hamburger menu */}
+    {/* Mobile Navigation */}
     <div class="flex md:hidden items-center">
-      <ThemeToggle client:load />
+      <MobileNav client:load />
     </div>
   </div>
 </nav>

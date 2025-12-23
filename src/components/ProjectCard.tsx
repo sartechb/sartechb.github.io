@@ -1,5 +1,6 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { GithubLogo } from '@phosphor-icons/react';
 
 interface ProjectProps {
   project: {
@@ -24,7 +25,8 @@ export function ProjectCard({ project }: ProjectProps) {
       <CardFooter className="gap-2">
         {project.links.map((link, idx) => (
           <Button key={idx} variant="outline" size="sm" asChild>
-            <a href={link.href} target="_blank" rel="noopener noreferrer">
+            <a href={link.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <GithubLogo size={16} />
               {link.title}
             </a>
           </Button>

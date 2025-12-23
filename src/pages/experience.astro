@@ -1,16 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { WorkCard } from '../components/WorkCard';
+import { TimelineItem } from '../components/TimelineItem';
 import workData from '../data/work.json';
 ---
 
 <Layout title="Work Experience - Sarthak Bhandari">
-  <div class="max-w-6xl mx-auto">
-    <h1 class="text-4xl font-bold mb-8">Work Experience</h1>
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-12">Work Experience</h1>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {workData.map((work) => (
-        <WorkCard work={work} />
+    <div>
+      {workData.map((work, idx) => (
+        <TimelineItem
+          title={work.company}
+          subtitle={work.title}
+          location={work.location}
+          duration={work.duration}
+          description={work.description}
+          iconType="work"
+          isLast={idx === workData.length - 1}
+          isCurrent={work.duration.end === 'Present'}
+          client:load
+        />
       ))}
     </div>
   </div>

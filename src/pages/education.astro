@@ -1,34 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { TimelineItem } from '../components/TimelineItem';
 import educationData from '../data/education.json';
 ---
 
 <Layout title="Education - Sarthak Bhandari">
   <div class="max-w-4xl mx-auto">
-    <h1 class="text-4xl font-bold mb-8">Education</h1>
+    <h1 class="text-4xl font-bold mb-12">Education</h1>
 
-    <div class="space-y-6">
-      {educationData.map((edu) => (
-        <Card className="hover:shadow-lg transition-shadow">
-          <CardHeader>
-            <CardTitle>{edu.school}</CardTitle>
-            <CardDescription>
-              <div class="space-y-1">
-                <div class="font-semibold text-foreground">{edu.degree}</div>
-                <div>
-                  {edu.duration.start} - {edu.duration.end}
-                </div>
-                <div>
-                  {edu.location.city}, {edu.location.state}
-                </div>
-              </div>
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p class="text-sm">{edu.description}</p>
-          </CardContent>
-        </Card>
+    <div>
+      {educationData.map((edu, idx) => (
+        <TimelineItem
+          title={edu.school}
+          subtitle={edu.degree}
+          location={edu.location}
+          duration={edu.duration}
+          description={edu.description}
+          iconType="education"
+          isLast={idx === educationData.length - 1}
+          isCurrent={false}
+          client:load
+        />
       ))}
     </div>
   </div>
