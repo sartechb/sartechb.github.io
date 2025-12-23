@@ -1,0 +1,30 @@
+{
+  "sections": [
+    {
+      "key": "about",
+      "value": "Hey! I'm Sarthak, a midwest man in the big city. I moved to New York in 2017 after graduating from the University of Michigan. I love technology and building things. In my free time I like to binge new shows or movies, play games or read. I also love taking urban hikes throughout the city and taking photos with my mirrorless camera."
+    },
+    {
+      "key": "work",
+      "value": "Currently I'm working as a full stack developer at Haven Life where I primarily focus on web development with React and Android with Java. I have also worked in machine learning and security. I love HCI and design."
+    }
+  ],
+  "social": [
+    {
+      "name": "Github",
+      "url": "https://github.com/sartechb"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/sartechb"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/sarthakbhandari/"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:hello@sarthakb.com"
+    }
+  ]
+}

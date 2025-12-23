@@ -1,74 +1,35 @@
 {
-    "name": "personal-site",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@material-ui/core": "^4.11.3",
-        "@material-ui/icons": "^4.11.2",
-        "@types/jest": "24.0.18",
-        "@types/node": "12.7.2",
-        "@types/react": "^16.14.2",
-        "@types/react-dom": "^16.9.10",
-        "@types/react-router-dom": "^5.1.7",
-        "clsx": "^1.1.1",
-        "react": "^16.14.0",
-        "react-dom": "^16.14.0",
-        "react-ga": "^2.7.0",
-        "react-router-dom": "^5.2.0",
-        "react-scripts": "^3.4.4",
-        "typescript": "^3.9.7"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "lint": "eslint --ext=.js,.ts,.jsx,.tsx src",
-        "lint:fix": "eslint --ext=.js,.ts,.jsx,.tsx src --fix"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^2.34.0",
-        "@typescript-eslint/parser": "^2.34.0",
-        "cz-conventional-changelog": "^3.3.0",
-        "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.15.0",
-        "eslint-plugin-jest": "^23.20.0",
-        "eslint-plugin-prettier": "^3.3.1",
-        "eslint-plugin-react": "^7.22.0",
-        "eslint-plugin-react-hooks": "^4.2.0",
-        "husky": "^4.3.8",
-        "lint-staged": "^10.5.3",
-        "prettier": "^2.2.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{js,css,json,md,ts,tsx}": [
-            "prettier --write",
-            "eslint --fix"
-        ]
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
-    }
+  "name": "sarthakb-portfolio",
+  "type": "module",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/tailwind": "^5.1.2",
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "astro": "^5.1.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.26",
+    "lucide-react": "^0.469.0",
+    "next-themes": "^0.4.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "typescript": "^5.7.3"
+  }
 }

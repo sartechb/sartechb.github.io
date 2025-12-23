@@ -1,0 +1,35 @@
+---
+import { ThemeProvider } from 'next-themes';
+import Navbar from '../components/Navbar.astro';
+import '../styles/globals.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = 'Sarthak Bhandari - Technical Product Manager based in New York',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem client:load>
+      <Navbar />
+      <main class="container mx-auto px-4 py-8 md:px-6">
+        <slot />
+      </main>
+    </ThemeProvider>
+  </body>
+</html>

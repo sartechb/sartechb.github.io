@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ProjectCard } from '../components/ProjectCard';
+import projectsData from '../data/projects.json';
+---
+
+<Layout title="Projects - Sarthak Bhandari">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8">Projects</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {projectsData.map((project) => (
+        <ProjectCard project={project} />
+      ))}
+    </div>
+  </div>
+</Layout>

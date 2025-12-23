@@ -1,0 +1,44 @@
+---
+import { ThemeToggle } from './ThemeToggle';
+
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Skills', href: '/skills' },
+  { label: 'Experience', href: '/experience' },
+  { label: 'Education', href: '/education' },
+  { label: 'Projects', href: '/projects' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+  <div class="container flex h-16 items-center justify-between px-4 md:px-6">
+    <a href="/" class="flex items-center space-x-2">
+      <span class="text-xl font-bold">Sarthak Bhandari</span>
+    </a>
+
+    {/* Desktop Navigation */}
+    <div class="hidden md:flex items-center space-x-6">
+      {
+        navItems.map((item) => (
+          <a
+            href={item.href}
+            class={`text-sm font-medium transition-colors hover:text-primary ${
+              currentPath === item.href ? 'text-primary' : 'text-muted-foreground'
+            }`}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+      <ThemeToggle client:load />
+    </div>
+
+    {/* Mobile Navigation - TODO: Implement hamburger menu */}
+    <div class="flex md:hidden items-center">
+      <ThemeToggle client:load />
+    </div>
+  </div>
+</nav>

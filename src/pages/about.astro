@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import aboutData from '../data/about.json';
+---
+
+<Layout title="About - Sarthak Bhandari">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <h1 class="text-4xl font-bold mb-8">About Me</h1>
+
+    <div class="space-y-6">
+      {aboutData.sections.map((section) => (
+        <p class="text-lg leading-relaxed">{section.value}</p>
+      ))}
+    </div>
+
+    <Card className="mt-8">
+      <CardHeader>
+        <CardTitle>Get in Touch</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div class="flex flex-wrap gap-3">
+          {aboutData.social.map((link) => (
+            <Button variant="outline" asChild>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.name}
+              </a>
+            </Button>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  </div>
+</Layout>

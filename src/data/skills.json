@@ -1,0 +1,26 @@
+[
+  {
+    "area": "Front-End",
+    "proficient": ["React", "JavaScript/ES6", "HTML"],
+    "knowledgeable": ["TypeScript", "CSS", "AngularJS", "Redux"],
+    "experienceWith": ["Sass", "Babel", "Webpack"]
+  },
+  {
+    "area": "Back-End",
+    "proficient": ["Node/Express"],
+    "knowledgeable": ["SQL"],
+    "experienceWith": ["Java", "Python (Flask, SciKit, NumPy)"]
+  },
+  {
+    "area": "Testing & CI/CD",
+    "proficient": ["Jenkins", "Jest", "Enzyme"],
+    "knowledgeable": ["TravisCI", "Wiremock", "Webdriver", "Selenium"],
+    "experienceWith": ["Karma", "Mocha", "Cypress"]
+  },
+  {
+    "area": "Other",
+    "proficient": ["English", "MacOS", "Agile", "Scrum"],
+    "knowledgeable": ["Windows", "Linux", "Microsoft Suite"],
+    "experienceWith": ["Spanish", "Hindi", "Adobe Photoshop"]
+  }
+]

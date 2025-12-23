@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SkillCard } from '../components/SkillCard';
+import skillsData from '../data/skills.json';
+---
+
+<Layout title="Skills - Sarthak Bhandari">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8">Skills</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {skillsData.map((skill) => (
+        <SkillCard skill={skill} />
+      ))}
+    </div>
+  </div>
+</Layout>

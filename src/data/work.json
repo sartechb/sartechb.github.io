@@ -1,0 +1,80 @@
+[
+  {
+    "company": "Haven Life",
+    "title": "Product Manager",
+    "location": {
+      "city": "New York",
+      "state": "New York"
+    },
+    "duration": {
+      "start": "July '21",
+      "end": "Present"
+    },
+    "description": "Analyzing data and planning product strategy and roadmaps for our life insurance products. Balancing the needs of users and stakeholders with our business goals to make strategic product decisions. Collaborating with engineers and designers to ship high quality user experiences."
+  },
+  {
+    "company": "Haven Life",
+    "title": "Software Engineer",
+    "location": {
+      "city": "New York",
+      "state": "New York"
+    },
+    "duration": {
+      "start": "July '20",
+      "end": "July '21"
+    },
+    "description": "Developed high visibility insurance software in Angular and Node."
+  },
+  {
+    "company": "American Express",
+    "title": "Software Engineer",
+    "location": {
+      "city": "New York",
+      "state": "New York"
+    },
+    "duration": {
+      "start": "August '17",
+      "end": "July '20"
+    },
+    "description": "Developed high volume, high impact production software in React and Node. Led architecture discussions and decisions including technology evaluations and design decisions. Worked on data intensive visual dashboards and charting. Implemented security and fraud detection features including 2 factor authentication. Solved critical escalated issues and production bugs. Maintained unit test coverage and performed load and stress testing. Worked in an Agile/Scrum environment."
+  },
+  {
+    "company": "American Express",
+    "title": "Software Engineer Intern",
+    "location": {
+      "city": "New York",
+      "state": "New York"
+    },
+    "duration": {
+      "start": "June '16",
+      "end": "August '16"
+    },
+    "description": "Worked on building Amex Go, a production ready Android app. Wrote reusable modules that allow for quick prototyping. Helped lay the ground work for future features by integrating third party libraries. Worked closely with the UX designer to tailor our app to create the best user experience. Used material design principles to build a modern app."
+  },
+  {
+    "company": "AdAdapted",
+    "title": "Software Engineer Intern",
+    "location": {
+      "city": "Ann Arbor",
+      "state": "Michigan"
+    },
+    "duration": {
+      "start": "May '15",
+      "end": "August '15"
+    },
+    "description": "Successfully helped launch the Android SDK by leading the design and development of four Android applications for production. Wrote developer documentation and improved the SDK sample app. Worked on the internal web tool used to manage advertisements and promotions."
+  },
+  {
+    "company": "Health Decisions",
+    "title": "Software Engineer Intern",
+    "location": {
+      "city": "Plymouth",
+      "state": "Michigan"
+    },
+    "duration": {
+      "start": "March '13",
+      "end": "June '13"
+    },
+    "description": "Used Microsoft SQL Server to improve accessibility of available healthcare information to our clients. Wrote Python scripts that automated processes and saved time."
+  }
+]

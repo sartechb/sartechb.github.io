@@ -1,0 +1,15 @@
+[
+  {
+    "school": "University of Michigan",
+    "degree": "Bachelors of Engineering",
+    "location": {
+      "city": "Ann Arbor",
+      "state": "Michigan"
+    },
+    "duration": {
+      "start": "September '13",
+      "end": "May '17"
+    },
+    "description": "Graduated Cum Laude. Took a variety of classes including machine learning, operating systems and distributed systems. Minored in entrepreneurship. I sometimes awkwardly say 'Go Blue!' to people wearing Michigan gear when I see them."
+  }
+]

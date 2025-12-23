@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import educationData from '../data/education.json';
+---
+
+<Layout title="Education - Sarthak Bhandari">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8">Education</h1>
+
+    <div class="space-y-6">
+      {educationData.map((edu) => (
+        <Card className="hover:shadow-lg transition-shadow">
+          <CardHeader>
+            <CardTitle>{edu.school}</CardTitle>
+            <CardDescription>
+              <div class="space-y-1">
+                <div class="font-semibold text-foreground">{edu.degree}</div>
+                <div>
+                  {edu.duration.start} - {edu.duration.end}
+                </div>
+                <div>
+                  {edu.location.city}, {edu.location.state}
+                </div>
+              </div>
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p class="text-sm">{edu.description}</p>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</Layout>
