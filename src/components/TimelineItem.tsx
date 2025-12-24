@@ -1,6 +1,17 @@
-import { MapPin, Calendar, Briefcase, GraduationCap } from '@phosphor-icons/react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { formatDateRange } from '@/lib/date-utils';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { formatDateRange } from "@/lib/date-utils";
+import {
+  BriefcaseIcon,
+  CalendarIcon,
+  GraduationCapIcon,
+  MapPinIcon,
+} from "@phosphor-icons/react";
 
 interface TimelineItemProps {
   title: string;
@@ -14,7 +25,7 @@ interface TimelineItemProps {
     end: string;
   };
   description: string;
-  iconType: 'work' | 'education';
+  iconType: "work" | "education";
   isLast?: boolean;
   isCurrent?: boolean;
 }
@@ -29,7 +40,12 @@ export function TimelineItem({
   isLast = false,
   isCurrent = false,
 }: TimelineItemProps) {
-  const icon = iconType === 'work' ? <Briefcase size={24} /> : <GraduationCap size={24} />;
+  const icon =
+    iconType === "work" ? (
+      <BriefcaseIcon size={24} />
+    ) : (
+      <GraduationCapIcon size={24} />
+    );
 
   return (
     <div className="relative flex gap-6 pb-8">
@@ -39,17 +55,15 @@ export function TimelineItem({
         <div
           className={`flex h-12 w-12 items-center justify-center rounded-full border-2 ${
             isCurrent
-              ? 'border-primary bg-primary text-white animate-pulse'
-              : 'border-border bg-background'
+              ? "border-primary bg-primary text-white animate-pulse"
+              : "border-border bg-background"
           }`}
         >
           {icon}
         </div>
 
         {/* Vertical line */}
-        {!isLast && (
-          <div className="absolute top-12 h-full w-0.5 bg-border" />
-        )}
+        {!isLast && <div className="absolute top-12 h-full w-0.5 bg-border" />}
       </div>
 
       {/* Content card */}
@@ -63,12 +77,12 @@ export function TimelineItem({
 
                 <div className="flex items-center gap-4 text-sm">
                   <div className="flex items-center gap-1">
-                    <Calendar size={16} />
+                    <CalendarIcon size={16} />
                     <span>{formatDateRange(duration.start, duration.end)}</span>
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <MapPin size={16} />
+                    <MapPinIcon size={16} />
                     <span>
                       {location.city}, {location.state}
                     </span>

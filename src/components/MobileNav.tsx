@@ -1,16 +1,22 @@
-import { useState } from 'react';
-import { List, X } from '@phosphor-icons/react';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import { Button } from '@/components/ui/button';
-import { ThemeToggle } from './ThemeToggle';
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { ListIcon } from "@phosphor-icons/react";
+import { useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Skills', href: '/skills' },
-  { label: 'Experience', href: '/experience' },
-  { label: 'Education', href: '/education' },
-  { label: 'Projects', href: '/projects' },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Skills", href: "/skills" },
+  { label: "Experience", href: "/experience" },
+  { label: "Education", href: "/education" },
+  { label: "Projects", href: "/projects" },
 ];
 
 export function MobileNav() {
@@ -20,7 +26,7 @@ export function MobileNav() {
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
-          <List size={24} />
+          <ListIcon size={24} />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>

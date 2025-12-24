@@ -1,7 +1,7 @@
 [
   {
     "title": "Personal Site",
-    "description": "This site! Uses React with Material UI in TypeScript. Uses a TravisCI pipeline to build and is deployed to GitHub Pages.",
+    "description": "This site! Uses Astro, React, and TailwindCSS. Hosted on Github Pages.",
     "links": [
       {
         "title": "Source",
@@ -11,7 +11,7 @@
   },
   {
     "title": "(Old) Personal Site",
-    "description": "My old personal website hosted on Github Pages. Designed from scratch using MaterializeCss.",
+    "description": "My old personal website hosted on Github Pages. Designed from scratch using Materialize CSS.",
     "links": [
       {
         "title": "Source",
@@ -35,7 +35,7 @@
     "links": [
       {
         "title": "Source",
-        "href": "https://github.com/sartechb/Wobetto"
+        "href": "https://github.com/sartechb/wobetto-old-umich"
       }
     ]
   }

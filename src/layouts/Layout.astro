@@ -1,5 +1,4 @@
 ---
-import { ThemeProvider } from 'next-themes';
 import Navbar from '../components/Navbar.astro';
 import '../styles/globals.css';
 
@@ -23,13 +22,19 @@ const {
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script is:inline>
+      // Set theme before page renders to prevent flash
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
   </head>
   <body>
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem client:load>
-      <Navbar />
-      <main class="container mx-auto px-4 py-8 md:px-6">
-        <slot />
-      </main>
-    </ThemeProvider>
+    <Navbar />
+    <main class="container mx-auto px-4 py-8 md:px-6">
+      <slot />
+    </main>
   </body>
 </html>

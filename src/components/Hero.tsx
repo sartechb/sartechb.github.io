@@ -1,5 +1,5 @@
-import { TextAnimate } from '@/components/magicui/text-animate';
-import { Button } from '@/components/ui/button';
+import { TextAnimate } from "@/components/magicui/text-animate";
+import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
@@ -14,10 +14,14 @@ export function Hero() {
         by="word"
         className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 max-w-4xl"
       >
-        Hello, Sarthak here. I'm a technical product manager.
+        Hi, I'm Sarthak.
       </TextAnimate>
       <Button asChild size="lg" className="mt-4">
-        <a href="/Bhandari_Sarthak_Resume_Web.pdf" target="_blank" rel="noopener noreferrer">
+        <a
+          href="/Bhandari_Sarthak_Resume_Web.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Download Resume
         </a>
       </Button>

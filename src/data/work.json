@@ -1,6 +1,32 @@
 [
   {
-    "company": "Haven Life",
+    "company": "Capital One",
+    "title": "Manager, Product Management",
+    "location": {
+      "city": "New York",
+      "state": "New York"
+    },
+    "duration": {
+      "start": "2025-02",
+      "end": "Present"
+    },
+    "description": "Leading product initiatives across marketing and data platforms. Unified engagement data across business lines, launched a $3MM NPV paperless campaign, and improved platform resiliency by reactivating over 1MM valid emails while optimizing AWS and Databricks infrastructure."
+  },
+  {
+    "company": "Haven Technologies",
+    "title": "Senior Product Manager",
+    "location": {
+      "city": "New York",
+      "state": "New York"
+    },
+    "duration": {
+      "start": "2023-09",
+      "end": "2024-12"
+    },
+    "description": "Managed a team of six and led the implementation of a serverless AWS architecture. Drove product strategy for an AI-enabled underwriting tool, partnered with sales and marketing to accelerate deal closures, and delivered $8M in AWS cost savings through data analysis and platform consolidation."
+  },
+  {
+    "company": "Haven Technologies",
     "title": "Product Manager",
     "location": {
       "city": "New York",
@@ -8,12 +34,12 @@
     },
     "duration": {
       "start": "2021-07",
-      "end": "Present"
+      "end": "2023-09"
     },
-    "description": "Analyzing data and planning product strategy and roadmaps for our life insurance products. Balancing the needs of users and stakeholders with our business goals to make strategic product decisions. Collaborating with engineers and designers to ship high quality user experiences."
+    "description": "Defined product vision and roadmap for a new B2B SaaS platform, launching it to $250K+ in first-year revenue. Shipped major features for MassMutual’s new business platform, including a new submission flow with 30% adoption in the first week. Led feasibility analysis, vendor partnerships, and executive-level communication."
   },
   {
-    "company": "Haven Life",
+    "company": "Haven Technologies",
     "title": "Software Engineer",
     "location": {
       "city": "New York",
@@ -23,7 +49,7 @@
       "start": "2020-07",
       "end": "2021-07"
     },
-    "description": "Developed high visibility insurance software in Angular and Node."
+    "description": "Built and shipped features for MassMutual’s insurance platform using Angular and Node. Advocated for and contributed to a shared front-end design system to improve consistency and developer velocity."
   },
   {
     "company": "American Express",
@@ -36,45 +62,6 @@
       "start": "2017-08",
       "end": "2020-07"
     },
-    "description": "Developed high volume, high impact production software in React and Node. Led architecture discussions and decisions including technology evaluations and design decisions. Worked on data intensive visual dashboards and charting. Implemented security and fraud detection features including 2 factor authentication. Solved critical escalated issues and production bugs. Maintained unit test coverage and performed load and stress testing. Worked in an Agile/Scrum environment."
-  },
-  {
-    "company": "American Express",
-    "title": "Software Engineer Intern",
-    "location": {
-      "city": "New York",
-      "state": "New York"
-    },
-    "duration": {
-      "start": "2016-06",
-      "end": "2016-08"
-    },
-    "description": "Worked on building Amex Go, a production ready Android app. Wrote reusable modules that allow for quick prototyping. Helped lay the ground work for future features by integrating third party libraries. Worked closely with the UX designer to tailor our app to create the best user experience. Used material design principles to build a modern app."
-  },
-  {
-    "company": "AdAdapted",
-    "title": "Software Engineer Intern",
-    "location": {
-      "city": "Ann Arbor",
-      "state": "Michigan"
-    },
-    "duration": {
-      "start": "2015-05",
-      "end": "2015-08"
-    },
-    "description": "Successfully helped launch the Android SDK by leading the design and development of four Android applications for production. Wrote developer documentation and improved the SDK sample app. Worked on the internal web tool used to manage advertisements and promotions."
-  },
-  {
-    "company": "Health Decisions",
-    "title": "Software Engineer Intern",
-    "location": {
-      "city": "Plymouth",
-      "state": "Michigan"
-    },
-    "duration": {
-      "start": "2013-03",
-      "end": "2013-06"
-    },
-    "description": "Used Microsoft SQL Server to improve accessibility of available healthcare information to our clients. Wrote Python scripts that automated processes and saved time."
+    "description": "Developed high-volume, multi-million dollar loan applications using React and Node. Led architecture discussions, created reusable components for the design system, and collaborated closely with product and design teams in an Agile environment."
   }
 ]

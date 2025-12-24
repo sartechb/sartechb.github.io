@@ -1,26 +1,67 @@
 [
   {
+    "area": "Product Management",
+    "proficient": [
+      "Product Strategy",
+      "Roadmapping",
+      "Discovery & Prioritization",
+      "Stakeholder Management",
+      "Cross-Functional Leadership",
+      "Product Execution"
+    ],
+    "knowledgeable": [
+      "Product Analytics",
+      "Experimentation & Measurement",
+      "Pricing & Business Cases",
+      "Go-To-Market Strategy",
+      "OKRs",
+      "A/B Testing"
+    ],
+    "experienceWith": ["Pricing", "Product-market fit"]
+  },
+  {
+    "area": "Data & Analytics",
+    "proficient": ["SQL", "Data-Informed Decision Making"],
+    "knowledgeable": [
+      "Tableau",
+      "Databricks",
+      "Marketing & Engagement Analytics",
+      "Snowflake"
+    ],
+    "experienceWith": ["Event Instrumentation", "Funnel Analysis"]
+  },
+  {
     "area": "Front-End",
-    "proficient": ["React", "JavaScript/ES6", "HTML"],
-    "knowledgeable": ["TypeScript", "CSS", "AngularJS", "Redux"],
-    "experienceWith": ["Sass", "Babel", "Webpack"]
+    "proficient": ["React", "TypeScript"],
+    "knowledgeable": ["JavaScript", "HTML", "CSS", "Angular"],
+    "experienceWith": ["Design Systems", "Redux"]
   },
   {
-    "area": "Back-End",
-    "proficient": ["Node/Express"],
-    "knowledgeable": ["SQL"],
-    "experienceWith": ["Java", "Python (Flask, SciKit, NumPy)"]
+    "area": "Back-End & Architecture",
+    "proficient": [],
+    "knowledgeable": [
+      "Bun",
+      "Node.js",
+      "Serverless Architectures",
+      "API Design"
+    ],
+    "experienceWith": ["Java", "Python", "Microservices"]
   },
   {
-    "area": "Testing & CI/CD",
-    "proficient": ["Jenkins", "Jest", "Enzyme"],
-    "knowledgeable": ["TravisCI", "Wiremock", "Webdriver", "Selenium"],
-    "experienceWith": ["Karma", "Mocha", "Cypress"]
+    "area": "Cloud & Infrastructure",
+    "proficient": [],
+    "knowledgeable": [
+      "AWS",
+      "CI/CD Concepts",
+      "Cloud Cost Optimization",
+      "Deployment Strategies"
+    ],
+    "experienceWith": ["Infrastructure as Code", "Observability & Monitoring"]
   },
   {
-    "area": "Other",
-    "proficient": ["English", "MacOS", "Agile", "Scrum"],
-    "knowledgeable": ["Windows", "Linux", "Microsoft Suite"],
-    "experienceWith": ["Spanish", "Hindi", "Adobe Photoshop"]
+    "area": "Ways of Working",
+    "proficient": ["Agile", "Scrum", "SDLC", "Distributed Teams", "JIRA"],
+    "knowledgeable": ["Program Management", "Vendor & Partner Management"],
+    "experienceWith": ["Waterfall", "Regulated Environments"]
   }
 ]

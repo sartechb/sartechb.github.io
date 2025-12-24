@@ -2,29 +2,29 @@
   "sections": [
     {
       "key": "about",
-      "value": "Hey! I'm Sarthak, a midwest man in the big city. I moved to New York in 2017 after graduating from the University of Michigan. I love technology and building things. In my free time I like to binge new shows or movies, play games or read. I also love taking urban hikes throughout the city and taking photos with my mirrorless camera."
+      "value": "Hey, I’m Sarthak. I'm a UMich alum (Go Blue!) in New York City. I started my career as a software engineer because I love building things and understanding how systems really work. Over time, I wanted to know why we build the things we do, so I went back to school for my MBA at NYU. Now, I’m passionate about the intersection of technology and business, and how we can leverage both to create meaningful impact."
     },
     {
       "key": "work",
-      "value": "Currently I'm working as a full stack developer at Haven Life where I primarily focus on web development with React and Android with Java. I have also worked in machine learning and security. I love HCI and design."
+      "value": "I currently work as a product manager at Capital One. I focus on building data-driven, scalable products in our enterprise space. In my personal time I'm a huge foodie and love exploring new restaurants and cafés around the world."
     }
   ],
   "social": [
     {
-      "name": "Github",
-      "url": "https://github.com/sartechb"
-    },
-    {
-      "name": "Twitter",
-      "url": "https://twitter.com/sartechb"
+      "name": "Email",
+      "url": "mailto:hello@sarthakb.com"
     },
     {
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/sarthakbhandari/"
     },
     {
-      "name": "Email",
-      "url": "mailto:hello@sarthakb.com"
+      "name": "Github",
+      "url": "https://github.com/sartechb"
+    },
+    {
+      "name": "Beli",
+      "url": "https://beliapp.co/app/sartechb"
     }
   ]
 }

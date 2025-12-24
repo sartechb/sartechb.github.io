@@ -1,5 +1,11 @@
-import { GithubLogo, XLogo, LinkedinLogo, Envelope } from '@phosphor-icons/react';
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
+import {
+  EnvelopeIcon,
+  ForkKnifeIcon,
+  GithubLogoIcon,
+  LinkedinLogoIcon,
+  XLogoIcon,
+} from "@phosphor-icons/react";
 
 interface SocialLink {
   name: string;
@@ -11,10 +17,11 @@ interface SocialLinksProps {
 }
 
 const iconMap: Record<string, React.ReactNode> = {
-  Github: <GithubLogo size={18} />,
-  Twitter: <XLogo size={18} />,
-  LinkedIn: <LinkedinLogo size={18} />,
-  Email: <Envelope size={18} />,
+  Github: <GithubLogoIcon size={18} />,
+  Twitter: <XLogoIcon size={18} />,
+  LinkedIn: <LinkedinLogoIcon size={18} />,
+  Email: <EnvelopeIcon size={18} />,
+  Beli: <ForkKnifeIcon size={18} />,
 };
 
 export function SocialLinks({ links }: SocialLinksProps) {
